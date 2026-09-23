@@ -1,7 +1,6 @@
 require("config.options") -- options
 require("config.keymaps") -- keymaps
 require("config.autocmd") -- autocmd
-
 -- icons
 local icons = require("config.icons")
 
