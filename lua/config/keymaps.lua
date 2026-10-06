@@ -3,7 +3,11 @@ local keymap = vim.keymap.set
 --- oil
 -- keymap("n", "<leader>e", "<cmd>Oil<cr>")
 
-keymap("n", "<leader>e", function() Snacks.picker.explorer() end, { desc = "File Explorer" })
+-- keymap("n", "<leader>e", function() Snacks.picker.explorer() end, { desc = "File Explorer" })
+
+keymap("n", "<leader>e", "<cmd> NvimTreeFindFileToggle <cr>")
+
+keymap("n", "-", "<cmd> Oil <cr>")
 
 -- split window
 keymap("n", "sv", "<cmd> vsplit <cr>")
